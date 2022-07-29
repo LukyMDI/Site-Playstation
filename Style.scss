@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1fc;
+    background: -moz-radial-gradient(center, ellipse cover,  #f1f1fc 0%, #a8a8a8 0%, #f1f1fc 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #f1f1fc 0%,#a8a8a8 0%,#f1f1fc 100%);
+    background: radial-gradient(ellipse at center,  #f1f1fc 0%,#a8a8a8 0%,#f1f1fc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1fc', endColorstr='#f1f1fc',GradientType=1 );
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+header {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    box-shadow: -4px 0px 10px black;
+    position: relative;
+    display: block;
+    z-index: 10;
+    animation: none;
+
+    #logo {
+        img {
+            position: relative;
+            left: 15px;
+            height: auto;
+            width: 100px;
+        }
+    }
+
+
+    nav#principal {
+        #lista {
+            position: relative;
+            left: 70%;
+            bottom: 45px;
+            width: 10%;
+
+            ul {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    color: rgb(83, 83, 83);
+                    list-style: none;
+                    cursor: pointer;
+                    margin-left: 30px;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: black;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes nav-animation {
+    from {
+        top: -60px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#bg-1 {
+    img {
+        width: 100%;
+    }
+}
+
+#bg-2 {
+    position: relative;
+    bottom: 5px;
+
+    img {
+        width: 100%;
+    }
+
+    animation: none;
+}
+
+@keyframes bg2-anim {
+    from {
+        left: 1400px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+/*#brilho {
+    position: relative;
+    bottom: 800px;
+    height: 774px;
+    width: 1351px;
+
+    #brilhe {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        box-shadow: 50px 50px 20px white,
+        500px 100px 20px white,
+        200px 300px 20px white,
+        350px 350px 20px white,
+        100px 700px 20px white,
+        50px 200px 20px white,
+        300px 700px 20px white,
+        200px 50px 20px white,
+        100px 500px 20px white,
+        900px 50px 20px white,
+        1000px 150px 20px white,
+        900px 650px 20px white,
+        1050px 500px 20px white,
+        950px 300px 20px white,
+        1200px 500px 20px white,
+        1150px 250px 20px white,
+        1250px 50px 20px white,
+        1200px 700px 20px white;
+
+        animation: anim-brilho 10s linear infinite;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            top: 774px;
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            box-shadow: 50px 50px 20px white,
+            500px 100px 20px white,
+            200px 300px 20px white,
+            350px 350px 20px white,
+            100px 700px 20px white,
+            50px 200px 20px white,
+            300px 700px 20px white,
+            200px 50px 20px white,
+            100px 500px 20px white,
+            900px 50px 20px white,
+            1000px 150px 20px white,
+            900px 650px 20px white,
+            1050px 500px 20px white,
+            950px 300px 20px white,
+            1200px 500px 20px white,
+            1150px 250px 20px white,
+            1250px 50px 20px white,
+            1200px 700px 20px white;
+        }
+    }
+}
+
+@keyframes anim-brilho {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-774px);
+    }
+}*/
