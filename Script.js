@@ -17,7 +17,7 @@ var bg2 = document.getElementById('bg-2');
 document.addEventListener("scroll", function(){
     var posicaoy = window.pageYOffset;
     if(posicaoy >= 100){
-        bg2.style.animation = "bg2-anim 0.5s";
+        bg2.style.animation = "bg2-anim 1.5s";
     }else{
         bg2.style.animation = "none";
     }
