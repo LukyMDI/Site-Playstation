@@ -84,9 +84,10 @@ a {
   color: inherit;
 }
 
-/*section {
-    height: 0px;
-}*/
+section {
+  height: 0px;
+}
+
 #bg-1 img {
   width: 100%;
 }
@@ -197,6 +198,9 @@ a {
   z-index: 7;
   background-color: #19356d;
   transition: opacity 0s linear 0ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #bg-3 #box-bg3 .quad-bg3:hover {
   transform: scale(3, 3);
@@ -212,6 +216,51 @@ a {
 #bg-3 #box-bg3 #quad3-bg3 {
   left: 50px;
   opacity: 0;
+}
+#bg-3 #box-bg3 .title-bg3 {
+  color: white;
+  font-size: 0.7em;
+  margin: 3px 0px 3px 0px;
+  font-family: zrnic;
+  letter-spacing: 0.7px;
+  text-shadow: 0px 0px 5px #124EC7;
+}
+#bg-3 #box-bg3 .span-bg3 {
+  font-size: 0.3em;
+  text-align: justify;
+  padding: 0px 5px 0px 5px;
+  color: #b4cdff;
+  font-family: zrnic;
+}
+
+#slide {
+  height: 0px;
+}
+#slide div {
+  position: relative;
+  bottom: 472px;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#slide div:nth-of-type(1) {
+  background-image: url("/Imagens/bg2.jpg");
+  min-height: 610px;
+}
+#slide div:nth-of-type(2) {
+  background-image: url("/Imagens/bg.jpg");
+  min-height: 610px;
+}
+#slide div:nth-of-type(3) {
+  background-image: url("/Imagens/controle.jpg");
+  min-height: 610px;
+}
+#slide div:nth-of-type(4) {
+  background-image: url("/Imagens/bg4.jpg");
+  min-height: 610px;
 }
 
 /*#brilho {
