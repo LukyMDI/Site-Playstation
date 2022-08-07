@@ -22,12 +22,12 @@ document.addEventListener("scroll", function(){
         bg2.style.animation = "bg2-anim 1.5s";
 //---------------Animação do texto-bg2-------------------//
         if(posicaoy >= 650){
-            txtbg2.style.animation = "bg2-anim 0.8s";
+            txtbg2.style.animation = "bg2-anim 2.5s";
             txtbg2.style.transition = "none";
             txtbg2.style.opacity = "1";
         }else if(posicaoy < 600){
             txtbg2.style.animation = "none";
-            txtbg2.style.transition = "opacity 0.8s";
+            txtbg2.style.transition = "opacity 1s";
             txtbg2.style.opacity = "0";
         }
     }else{

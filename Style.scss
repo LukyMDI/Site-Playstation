@@ -13,7 +13,7 @@ $font: 1.08em;
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background: #f1f1fc;
     background: -moz-radial-gradient(center, ellipse cover,  #f1f1fc 0%, #a8a8a8 0%, #f1f1fc 100%);
     background: -webkit-radial-gradient(center, ellipse cover,  #f1f1fc 0%,#a8a8a8 0%,#f1f1fc 100%);
@@ -21,7 +21,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1fc', endColorstr='#f1f1fc',GradientType=1 );
     font-family: 'Noto Sans', sans-serif;
     overflow-x: hidden;
-    min-height: 100vh;
+    font-size: 1rem;
     //user-select: none;
 }
 
@@ -38,8 +38,9 @@ header {
     #navegacao {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        min-width: 100%;
 
         #logo {
             img {
@@ -52,11 +53,9 @@ header {
     
     
         #principal {
+            margin-right: 40px;
 
             #lista {
-                position: relative;
-                left: 850px;
-
                 ul {
                     position: relative;
                     display: flex;
@@ -94,42 +93,53 @@ a {
     color: inherit;
 }
 
-section {
-    height: 0px;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 #bg-1 {
-    img {
-        width: 100%;
-    }
+    height: 120vh;
+    width: 100vw;
+    background-image: url('/Imagens/f5.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #bg-2 {
-    position: relative;
-    bottom: 5px;
-    //display: none;
+    height: 115vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/Imagens/bg5.webp');
     animation: none;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
 
-    img {
-        width: 100%;
-    }
-
-    div {
+    #txt-bg2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        bottom: 370px;
-        left: 50px;
         width: 40%;
+        height: 50%;
         animation: none;
+        text-align: justify;
+        border: 2px solid #124EC7;
+        box-shadow: 0px 0px 10px #124EC7;
+        background-color: #19356d;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 0px 0px 20px 20px;
+        overflow: auto;
 
         h1 {
             color: rgb(190, 205, 255);
-            margin-bottom: 30px;
             text-shadow: 0px 0px 10px #124EC7;
             font-family: zrnic;
             font-size: 2.5em;
+            margin-bottom: 30px;
         }
 
         p {
@@ -153,24 +163,25 @@ section {
 }
 
 #bg-3 {
-    position: relative;
-    bottom: 315px;
-    width: 100%;
-
-    img#ctrl-1 {
-        width: 100%;
-    }
+    max-width: 100vw;
+    height: 121vh;
+    background-repeat: no-repeat;
+    background-image: url('/Imagens/ctrl.webp');
+    background-size: cover;
+    background-position: center;
 
     #box-bg3 {
         display: flex;
         flex-direction: nowrap;
         opacity: 0;
         transition: opacity 0.8s;
+        margin-top: 50px;
+        align-items: center;
+        position: relative;
+        right: 50px;
 
         img#ctrl-2 {
-            position: relative;
-            bottom: 700px;
-            width: 20%;
+            width: 300px;
             z-index: 5;
         }
 
@@ -179,11 +190,11 @@ section {
             box-shadow: 0px 0px 5px #124EC7;
             height: 1px;
             width: 100px;
-            bottom: 620px;
-            position: relative;
             z-index: 6;
+            margin: 0px 20px 0px 20px;
             transition: opacity 0.8s;
             transition-delay: 0ms;
+            border-radius: 10px;
         }
     
         #linha1-bg3 {
@@ -206,14 +217,13 @@ section {
             box-shadow: 0px 0px 10px #124EC7;
             width: 120px;
             height: 70px;
-            bottom: 655px;
-            position: relative;
             z-index: 7;
             background-color: #19356d;
             transition: opacity 0s linear 0ms;
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-radius: 10px;
 
             &:hover {
                 transform: scale(3, 3);
@@ -255,11 +265,9 @@ section {
 }
 
 #slide {
-    height: 0px;
+    //height: 0px;
 
     div {
-        position: relative;
-        bottom: 472px;
         width: 100%;
         height: 100%;
         background-position: center center;
@@ -286,6 +294,60 @@ section {
     div:nth-of-type(4) {
         background-image: url('/Imagens/bg4.jpg');
         min-height: 610px;
+    }
+}
+
+#bg-4 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #quad1-bg4 {
+        border: 3px solid #124EC7;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #124EC7;
+        background-color: #090b0f;
+        width: 50%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            position: relative;
+            width: 50%;
+            height: 50%;
+            filter: invert(100%);
+        }
+    }
+
+    #icones {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+
+        .icone {
+            position: relative;
+            display: flex;
+            color: white;
+            width: 100%;
+        }
+
+        #icone-insta {
+            position: relative;
+            margin-left: 10px;
+            bottom: 200px;
+
+            img {
+                width: 10%;
+                height: auto;
+                margin-right: 10px;
+            }
+        }
     }
 }
 
