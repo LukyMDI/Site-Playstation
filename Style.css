@@ -125,7 +125,6 @@ a {
   border-radius: 10px;
   padding: 20px;
   margin: 0px 0px 20px 20px;
-  overflow: auto;
 }
 #bg-2 #txt-bg2 h1 {
   color: rgb(190, 205, 255);
@@ -301,25 +300,17 @@ a {
   filter: invert(100%);
 }
 #bg-4 #icones {
-  align-self: flex-start;
   display: flex;
+  align-self: flex-start;
   flex-direction: column;
 }
-#bg-4 #icones .icone {
-  position: relative;
+#bg-4 .icone {
   display: flex;
   color: white;
-  width: 100%;
-}
-#bg-4 #icones #icone-insta {
-  position: relative;
   margin-left: 10px;
-  bottom: 200px;
 }
-#bg-4 #icones #icone-insta img {
-  width: 10%;
-  height: auto;
-  margin-right: 10px;
+#bg-4 .icone img {
+  padding-right: 10px;
 }
 
 /*#brilho {

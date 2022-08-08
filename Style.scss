@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&display=swap');
-
+//variáveis---------------------------------------------//
 $font: 1.08em;
-
+//Fonte Zrnic (Playstation)-----------------------------//
 @font-face {
     font-family: zrnic;
     src: url(/Fonts/zrnic.ttf);
@@ -34,7 +34,7 @@ header {
     display: block;
     z-index: 10;
     animation: none;
-
+//Menu de navegação------------------------------------//
     #navegacao {
         display: flex;
         flex-direction: row;
@@ -51,7 +51,7 @@ header {
             }
         }
     
-    
+//Opções de navegação---------------------------------//    
         #principal {
             margin-right: 40px;
 
@@ -92,12 +92,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+//Div geral----------------------------------------------//
 .container {
     display: flex;
     flex-direction: column;
 }
-
+//Primeiro background------------------------------------//
 #bg-1 {
     height: 120vh;
     width: 100vw;
@@ -106,7 +106,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+//Segundo background--------------------------------------//
 #bg-2 {
     height: 115vh;
     width: 100vw;
@@ -117,7 +117,7 @@ a {
     background-position: center;
     display: flex;
     align-items: flex-end;
-
+//Texto do segundo background-----------------------------//
     #txt-bg2 {
         display: flex;
         flex-direction: column;
@@ -132,7 +132,6 @@ a {
         border-radius: 10px;
         padding: 20px;
         margin: 0px 0px 20px 20px;
-        overflow: auto;
 
         h1 {
             color: rgb(190, 205, 255);
@@ -152,7 +151,7 @@ a {
         }
     }
 }
-
+//Animação do texto--------------------------------------//
 @keyframes bg2-anim {
     from {
         opacity: 0;
@@ -161,7 +160,7 @@ a {
         opacity: 1;
     }
 }
-
+//Terceiro background------------------------------------//
 #bg-3 {
     max-width: 100vw;
     height: 121vh;
@@ -169,7 +168,7 @@ a {
     background-image: url('/Imagens/ctrl.webp');
     background-size: cover;
     background-position: center;
-
+//Menu animado do terceiro background--------------------//
     #box-bg3 {
         display: flex;
         flex-direction: nowrap;
@@ -184,7 +183,7 @@ a {
             width: 300px;
             z-index: 5;
         }
-
+//Linhas do menu animado----------------------------------//
         .linha-bg3 {
             background-color: #124EC7;
             box-shadow: 0px 0px 5px #124EC7;
@@ -211,7 +210,7 @@ a {
             left: 30px;
             opacity: 0;
         }
-
+//Quadrados do menu animado-----------------------------//
         .quad-bg3 {
             border: 2px solid #124EC7;
             box-shadow: 0px 0px 10px #124EC7;
@@ -263,10 +262,8 @@ a {
         }
     }
 }
-
+//Imagens com transição---------------------------------//
 #slide {
-    //height: 0px;
-
     div {
         width: 100%;
         height: 100%;
@@ -296,7 +293,7 @@ a {
         min-height: 610px;
     }
 }
-
+//Quarto background------------------------------------//
 #bg-4 {
     height: 100vh;
     width: 100%;
@@ -324,29 +321,20 @@ a {
             filter: invert(100%);
         }
     }
-
+//Informações de contato-------------------------------//
     #icones {
-        align-self: flex-start;
         display: flex;
+        align-self: flex-start;
         flex-direction: column;
+    }
 
-        .icone {
-            position: relative;
-            display: flex;
-            color: white;
-            width: 100%;
-        }
+    .icone {
+        display: flex;
+        color: white;
+        margin-left: 10px;
 
-        #icone-insta {
-            position: relative;
-            margin-left: 10px;
-            bottom: 200px;
-
-            img {
-                width: 10%;
-                height: auto;
-                margin-right: 10px;
-            }
+        img {
+            padding-right: 10px;
         }
     }
 }

@@ -34,7 +34,7 @@ document.addEventListener("scroll", function(){
         bg2.style.animation = "none";
     }
 });
-//-------------Animação box do terceiro background-----------//
+//-------------Animação do menu animado - terceiro background-----------//
 var bg3 = document.getElementById('box-bg3');
 var quad1Bg3 = document.getElementById('quad1-bg3');
 var linha1Bg3 = document.getElementById('linha1-bg3');
