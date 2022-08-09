@@ -22,7 +22,7 @@ document.addEventListener("scroll", function(){
         bg2.style.animation = "bg2-anim 1.5s";
 //---------------Animação do texto-bg2-------------------//
         if(posicaoy >= 650){
-            txtbg2.style.animation = "bg2-anim 2.5s";
+            txtbg2.style.animation = "bg2-anim 2s";
             txtbg2.style.transition = "none";
             txtbg2.style.opacity = "1";
         }else if(posicaoy < 600){
